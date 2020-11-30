@@ -10,7 +10,7 @@ function vmMatchesName(vm, name) {
   // We want to mirror how Vue resolves component names in SFCs:
   // For example, <test-component />, <TestComponent /> and `<testComponent />
   // all resolve to the same component
-  const componentName = (vm.$options && vm.$options.name) || ''
+  const componentName = vm.name || (vm.$options && vm.$options.name) || ''
   return (
     !!name &&
     (componentName === name ||
