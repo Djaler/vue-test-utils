@@ -1,5 +1,5 @@
 {
-  "name": "@vue/test-utils",
+  "name": "@djaler/vue-test-utils",
   "version": "1.1.1",
   "description": "Utilities for testing Vue components.",
   "main": "dist/vue-test-utils.js",
@@ -8,13 +8,16 @@
     "dist/*.js",
     "types/index.d.ts"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "node scripts/build.js",
     "build:test": "cross-env NODE_ENV=test SHOW_DEPRECATIONS=false node scripts/build.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vue-test-utils.git",
+    "url": "git+https://github.com/djaler/vue-test-utils.git",
     "directory": "packages/test-utils"
   },
   "author": "vuejs",
