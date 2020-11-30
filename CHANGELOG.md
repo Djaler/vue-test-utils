@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/Djaler/vue-test-utils/compare/v1.1.1...v1.1.2) (2020-11-30)
+
+
+### Bug Fixes
+
+* use functional component name in vmMatchesName ([9d1c680](https://github.com/Djaler/vue-test-utils/commit/9d1c6803c9d63042553c8f137370ba7124cd16ac))
+
+
+
+
+
 ## [1.0.5](https://github.com/vuejs/vue-test-utils/compare/v1.0.4...v1.0.5) (2020-08-29)
 
 
