@@ -332,6 +332,21 @@ describeWithShallowAndMount('find', mountingMethod => {
     }
   )
 
+  it.only('works correctly with props "name"', () => {
+    const ChildComponent = Vue.extend({
+      template: '<div />',
+      props: ['name'],
+      name: 'child-component'
+    })
+    const TestComponent = {
+      template: '<child-component name="test" />',
+      components: { ChildComponent }
+    }
+    const wrapper = mountingMethod(TestComponent)
+
+    expect(wrapper.find({ name: 'child-component' }).exists()).toEqual(true)
+  })
+
   it('returns extended functional component', () => {
     const TestFunctionalComponent = Vue.extend({
       render: h => h('div'),
