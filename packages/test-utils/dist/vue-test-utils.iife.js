@@ -2713,7 +2713,7 @@ var VueTestUtils = (function (exports, Vue, vueTemplateCompiler) {
     // We want to mirror how Vue resolves component names in SFCs:
     // For example, <test-component />, <TestComponent /> and `<testComponent />
     // all resolve to the same component
-    var componentName = vm.name || (vm.$options && vm.$options.name) || '';
+    var componentName = (vm.$options && vm.$options.name) || vm.name || '';
     return (
       !!name &&
       (componentName === name ||
